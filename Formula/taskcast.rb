@@ -7,22 +7,22 @@ class Taskcast < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "36e2e2ca887ca052b60d9f598f6e44601e80c0e4f3c2d918191c75ef39f3dd9a"
+      sha256 "8456caa14be56cbaef19e9f50ee99f710f3c5e3688d13d04ef03d195b0cd25c1"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "ea2478fc0b58d93e88f8c9f0cee9fd826f847036d04082febbda908039baca85"
+      sha256 "705116f3dca2029b06d5fdb7e7960aa606c4219d2ba67cfa83ba8f185e6b3f11"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7a606f42191cc43cc52b5097f1a7141b5805efd93b4af2958a78d2a51ee122c1"
+      sha256 "039c0a5f1371bd9c6e803e1b3ef246c6e40c98e77b295ef4f7bf663e09b8dbfb"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5479e477dc5816d6d072a7b7a27ebd420bdc70a9c2f5742a38b98e7ac9ad1e5c"
+      sha256 "44a141fd75e6c0f53476416175899866111973c5f29130f469305222a735a6bc"
     end
   end
 
