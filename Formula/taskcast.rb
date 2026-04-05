@@ -1,28 +1,28 @@
 class Taskcast < Formula
   desc "Unified long-lifecycle task tracking service for LLM streaming and async workloads"
   homepage "https://github.com/weightwave/taskcast"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "561784ab488f25254945195a6f26d8c17e86dda01f6adc3e6c39acd308f59800"
+      sha256 "6683ef88887d600fdfe93dcd46fa7f8050dcae3898578ad0fff1b37fe8a8e3ef"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "405a34838d88e9ec0e6c2dfb488b5fdb4d12061d365fbb1d95e6d5035bc5022c"
+      sha256 "14ab089e7c338d9304b4823586574d586013d2462e4a292b108754b6048c24e0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6e1c86e95ae4a4fe5f7adcb95793162002ff0d82236dd83824e294767aff6c77"
+      sha256 "6505c058f3c1e2d82231ac6297916f60ce4e3f0a32466cf35d400d9fc5e6ed15"
     end
     if Hardware::CPU.intel?
       url "https://github.com/weightwave/taskcast/releases/download/v#{version}/taskcast-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "31340c69663e5b830d9b62d1fd8bac272bc2eb5bda5ebe82ed363999b08726ae"
+      sha256 "9bafdf82afcada972e8ad965ab6ac2684f058875b8cacbb118ac9eaf5a27749c"
     end
   end
 
